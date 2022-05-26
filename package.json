@@ -1,8 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "build": "vite build",
-    "dev": "vite"
+    "build": "vite build && mv public/themes/doomtrooperdb/assets/*.ico public/themes/doomtrooperdb/assets/*.json public/themes/doomtrooperdb/assets/*.png public/themes/doomtrooperdb/assets/*.xml public/themes/doomtrooperdb/assets/images/favicons && mv public/themes/doomtrooperdb/assets/images/favicons/_manifest.json public/themes/doomtrooperdb/assets/manifest.json"
   },
   "devDependencies": {
     "@amatlash/vite-plugin-stylelint": "^1.2.0",
