@@ -2,6 +2,12 @@
 
 require __DIR__ . '/../vendor/autoload.php';
 
+if (class_exists('\Whoops\Run')) {
+    $whoops = new \Whoops\Run;
+    $whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler);
+    $whoops->register();
+}
+
 $application = new WordPlate\Application(realpath(__DIR__ . '/../'));
 $application->run();
 
