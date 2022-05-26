@@ -9,7 +9,11 @@
   ],
   "require": {
     "php": "^8.0",
-    "wordplate/framework": "^11.1"
+    "wordplate/framework": "^11.1",
+    "wpackagist-plugin/classic-editor": "^1.6",
+    "wpackagist-plugin/disable-comments": "^2.3",
+    "wpackagist-plugin/disable-embeds": "^1.5",
+    "wpackagist-plugin/disable-emojis": "^1.7"
   },
   "repositories": [
     {
@@ -51,5 +55,9 @@
     "post-install-cmd": [
       "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
     ]
+  },
+  "require-dev": {
+    "filp/whoops": "^2.14",
+    "symfony/var-dumper": "^6.0"
   }
 }
