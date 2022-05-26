@@ -1,14 +1,16 @@
 {
   "name": "wordplate/wordplate",
   "description": "A WordPress stack with sprinkles on top",
-  "license": "MIT",
+  "license": "AGPL-3.0-or-later",
   "keywords": [
     "wordplate",
     "wordpress",
-    "boilerplate"
+    "doomtrooper"
   ],
   "require": {
     "php": "^8.0",
+    "designcise/manifest-json": "^2.0",
+    "fiskhandlarn/blade": "^0.6.1",
     "wordplate/framework": "^11.1",
     "wpackagist-plugin/classic-editor": "^1.6",
     "wpackagist-plugin/disable-comments": "^2.3",
@@ -37,9 +39,7 @@
   "extra": {
     "installer-paths": {
       "public/mu-plugins/{$name}": [
-        "type:wordpress-muplugin"
-      ],
-      "public/plugins/{$name}": [
+        "type:wordpress-muplugin",
         "type:wordpress-plugin"
       ],
       "public/themes/{$name}": [
