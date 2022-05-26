@@ -1,4 +1,5 @@
 import { defineConfig } from 'vite';
+import viteStylelint from '@amatlash/vite-plugin-stylelint';
 
 require('dotenv').config();
 
@@ -14,6 +15,7 @@ export default defineConfig(({ command }) => ({
     },
   },
   plugins: [
+    viteStylelint(),
     {
       name: 'php',
       handleHotUpdate({ file, server }) {

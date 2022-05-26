@@ -10,6 +10,12 @@ make install
 
 Edit the newly created `.env` file with the database name and WordPress salts.
 
+## Build assets
+
+```bash
+npm run build
+```
+
 ## Docker
 
 Start Docker:
