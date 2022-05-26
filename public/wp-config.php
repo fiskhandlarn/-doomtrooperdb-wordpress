@@ -5,6 +5,7 @@ require __DIR__ . '/../vendor/autoload.php';
 if (class_exists('\Whoops\Run')) {
     $whoops = new \Whoops\Run;
     $whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler);
+    $whoops->silenceErrorsInPaths('#public/wordpress/#', E_DEPRECATED);
     $whoops->register();
 }
 
