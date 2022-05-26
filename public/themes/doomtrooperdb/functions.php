@@ -2,8 +2,8 @@
 
 declare(strict_types=1);
 
-// Register plugin helpers.
 require_once get_theme_file_path('includes/assets.php');
+require_once get_theme_file_path('includes/headache.php');
 
 add_action('after_setup_theme', function () {
     show_admin_bar(false);
