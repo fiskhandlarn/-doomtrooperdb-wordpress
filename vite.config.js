@@ -5,13 +5,13 @@ require('dotenv').config();
 
 export default defineConfig(({ command }) => ({
   base: command === 'serve' ? '/' : '/build/',
-  publicDir: 'resources/static',
+  publicDir: 'resources/assets/static',
   build: {
     manifest: true,
     outDir: `public/themes/${process.env.WP_DEFAULT_THEME}/assets`,
     assetsDir: '',
     rollupOptions: {
-      input: 'resources/scripts/index.js',
+      input: 'resources/assets/scripts/index.js',
     },
   },
   plugins: [
