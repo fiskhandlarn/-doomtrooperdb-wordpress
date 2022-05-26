@@ -1,0 +1,11 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "vite": "^2.9.9"
+  }
+}
