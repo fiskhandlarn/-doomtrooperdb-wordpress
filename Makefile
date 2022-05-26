@@ -4,6 +4,7 @@ include $(ENV_DOCKER)
 
 install: volumes%create ssl%create
 	composer install
+	npm install
 
 volumes%create:
 	@mkdir -p $(MYSQL_DATA_DIR) $(NGINX_LOG_DIR) $(SSL_CERTS_DIR)
