@@ -1,0 +1,31 @@
+// Bootstrap overrides
+
+$primary: #627541;
+
+// reset array
+$theme-colors: (
+  'primary':    $primary,
+  'secondary':  $secondary,
+  'success':    $success,
+  'info':       $info,
+  'warning':    $warning,
+  'danger':     $danger,
+  'light':      $light,
+  'dark':       $dark
+);
+
+/* --------------------------------------------------------------------
+LINKS
+-------------------------------------------------------------------- */
+$link-color: $primary;
+$link-hover-color: shift-color($link-color, $link-shade-percentage);
+
+/* --------------------------------------------------------------------
+NAVBAR
+-------------------------------------------------------------------- */
+$color-navbar: #000 !default;
+$navbar-light-color: $link-color;
+$navbar-light-hover-color: $link-hover-color;
+$navbar-light-active-color: shift-color($link-color, 40%);
+$input-focus-border-color: tint-color($primary, 50%);
+$input-focus-box-shadow: 0 0 $input-btn-focus-blur $input-btn-focus-width rgba($primary, $input-btn-focus-color-opacity);

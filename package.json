@@ -6,6 +6,7 @@
   "devDependencies": {
     "@amatlash/vite-plugin-stylelint": "^1.2.0",
     "@fiskhandlarn/revenge.css": "^1.0.5",
+    "bootstrap": "^5.1.3",
     "browserslist": "^4.20.3",
     "dotenv": "^16.0.1",
     "import-glob-loader": "^1.1.0",
