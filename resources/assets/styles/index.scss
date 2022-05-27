@@ -7,6 +7,7 @@
 @import 'bootstrap/scss/variables';
 
 /* Project: settings (which overrides bootstrap) */
+@import 'settings/typography';
 @import 'settings/variables';
 
 /* Bootstrap: Configuration continued */
@@ -52,3 +53,5 @@
 
 /* Bootstrap: Utilities */
 /* @import 'bootstrap/scss/utilities/api'; */
+
+@import 'base/globals';

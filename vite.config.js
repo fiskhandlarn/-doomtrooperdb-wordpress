@@ -5,7 +5,7 @@ import { ViteFaviconsPlugin } from 'vite-plugin-favicon';
 require('dotenv').config();
 
 export default defineConfig(({ command }) => ({
-  base: command === 'serve' ? '/' : '/build/',
+  base: `/themes/${process.env.WP_DEFAULT_THEME}/assets/`,
   publicDir: 'resources/assets/static',
   build: {
     manifest: '_manifest.json',
